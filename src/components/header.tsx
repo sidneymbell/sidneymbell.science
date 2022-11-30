@@ -72,7 +72,7 @@ const Header = (props: HeaderProps) => {
             <TwitterIcon />
           </a>
           <a
-            href="https://linkedin.com/sidneymbell"
+            href="https://www.linkedin.com/in/sidneymbell/"
             style={{ textDecoration: "none", position: "relative", top: 20 }}
             target="_blank"
             rel="noreferrer noopener"

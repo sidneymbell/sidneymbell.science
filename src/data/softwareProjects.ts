@@ -9,7 +9,7 @@ export const softwareProjects: SoftwareProjectType[] = [
     role: "Co-creator",
     description:
       "Galago automatically generates scientific narratives and interactive visualizations to help public health officials interpret phylogenetic trees during outbreak investigations. Beta launch fall 2022.",
-    link: "htttps://galago.czgenepi.org",
+    link: "https://galago.czgenepi.org/",
   },
   {
     title:

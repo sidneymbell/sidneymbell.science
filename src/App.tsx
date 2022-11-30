@@ -4,6 +4,7 @@ import { useWindowSize } from "@react-hook/window-size";
 import Intro from "./components/intro";
 import { Divider } from "@mui/material";
 import SoftwareSection from "./components/softwareSection";
+import PaperSection from "./components/paperSection";
 
 export const App = () => {
   const [windowWidth, windowHeight] = useWindowSize();
@@ -25,6 +26,11 @@ export const App = () => {
           Open-source software: data exploration & bioinformatics
         </h2>
         <SoftwareSection contentWidth={contentWidth} />
+        <Divider variant="middle" light />
+        <h2 style={{ position: "absolute", left: 50 }}>
+          Selected publications
+        </h2>
+        <PaperSection contentWidth={contentWidth} />
       </div>
     </div>
   );

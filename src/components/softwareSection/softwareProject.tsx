@@ -25,6 +25,8 @@ export const SoftwareProject = (props: SoftwareProjectProps) => {
         margin: "auto",
         paddingTop: 100,
         paddingBottom: 100,
+        paddingLeft: 50,
+        paddingRight: 50,
         position: "relative",
         // border: "1px solid red",
       }}
@@ -34,8 +36,13 @@ export const SoftwareProject = (props: SoftwareProjectProps) => {
       <h5>
         {date} {role}
       </h5>
-      <p style={{ fontSize: 14, width: contentWidth - 50 }}>{description}</p>
-      <a href={link} style={{ textDecoration: "none" }}>
+      <p className="projectDescription">{description}</p>
+      <a
+        href={link}
+        style={{ textDecoration: "none" }}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <Button
           variant="outlined"
           color="primary"

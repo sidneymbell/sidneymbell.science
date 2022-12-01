@@ -5,7 +5,7 @@ export const softwareProjects: SoftwareProjectType[] = [
     title:
       "Galago: assisted interpretation for pathogen genomic data during outbreak investigations",
     imageSource:
-      "https://github.com/sidneymbell/sidneymbell.science/blob/main/src/images/galago.jpg",
+      "https://raw.githubusercontent.com/sidneymbell/sidneymbell.science/main/src/images/galago.png",
     date: "2022",
     role: "Co-creator",
     description:
@@ -16,7 +16,7 @@ export const softwareProjects: SoftwareProjectType[] = [
     title:
       "CZ GEN EPI: making applied genomic epidemiology accessible for public health",
     imageSource:
-      "https://github.com/sidneymbell/sidneymbell.science/blob/main/src/images/czgenepi.jpg",
+      "https://raw.githubusercontent.com/sidneymbell/sidneymbell.science/main/src/images/czgenepi.jpg",
     date: "2020 - 2021",
     role: "Founding product lead",
     description:
@@ -26,7 +26,7 @@ export const softwareProjects: SoftwareProjectType[] = [
   {
     title: "Cellxgene: an interactive explorer for high-dimensional data",
     imageSource:
-      "https://github.com/sidneymbell/sidneymbell.science/blob/main/src/images/cellxgene.gif",
+      "https://raw.githubusercontent.com/sidneymbell/sidneymbell.science/main/src/images/cellxgene.jpg",
     date: "2018 - 2019",
     role: "Scientific lead",
     description:
@@ -36,7 +36,7 @@ export const softwareProjects: SoftwareProjectType[] = [
   {
     title: "Nextstrain: real-time tracking of pathogen evolution and spread",
     imageSource:
-      "https://github.com/sidneymbell/sidneymbell.science/blob/main/src/images/nextstrain.jpg",
+      "https://raw.githubusercontent.com/sidneymbell/sidneymbell.science/main/src/images/nextstrain.jpg",
     date: "2017 - 2018",
     role: "Core contributor",
     description:

@@ -23,7 +23,10 @@ export const Intro = (props: IntroProps) => {
         marginTop: 50,
       }}
     >
-      <img className="imageSmallRound" src="src/images/sidney.jpeg" />
+      <img
+        className="imageSmallRound"
+        src="https://raw.githubusercontent.com/sidneymbell/sidneymbell.science/main/src/images/sidney.jpeg"
+      />
       <p style={{ fontSize: 18, width: contentWidth - 200 }}>
         Hello! I’m a computational biologist excited about empowering fellow
         scientists to explore and understand their data through software.

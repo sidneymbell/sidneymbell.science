@@ -3,8 +3,9 @@ import Header from "./components/header";
 import { useWindowSize } from "@react-hook/window-size";
 import Intro from "./components/intro";
 import { Divider } from "@mui/material";
-import SoftwareSection from "./components/softwareSection";
-import PaperSection from "./components/paperSection";
+import { softwareProjects } from "./data/softwareProjects";
+import { papers } from "./data/paperProjects";
+import Gallery from "./components/gallery";
 
 export const App = () => {
   const [windowWidth, windowHeight] = useWindowSize();
@@ -21,16 +22,16 @@ export const App = () => {
         }}
       >
         <Intro contentWidth={contentWidth} contentHeight={200} />
-        <Divider variant="middle" light />
+        <Divider variant="middle" />
         <h2 style={{ position: "absolute", left: 50 }}>
           Open-source software: data exploration & bioinformatics
         </h2>
-        <SoftwareSection contentWidth={contentWidth} />
-        <Divider variant="middle" light />
+        <Gallery contentWidth={contentWidth} projects={softwareProjects} />
+        <Divider variant="middle" />
         <h2 style={{ position: "absolute", left: 50 }}>
           Selected publications
         </h2>
-        <PaperSection contentWidth={contentWidth} />
+        <Gallery contentWidth={contentWidth} projects={papers} lg={4} />
       </div>
     </div>
   );

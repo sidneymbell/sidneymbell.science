@@ -1,18 +1,8 @@
-export interface SoftwareProjectType {
+export interface ProjectData {
   title: string;
   imageSource: string;
-  date: string;
-  role: string;
+  subtitle: string;
   description: string;
   link: string;
-}
-
-export interface PaperProjectType {
-  title: string;
-  imageSource: string;
-  date: string;
-  authors: string;
-  journal: string;
-  link: string;
-  description: string;
+  linkText: string;
 }

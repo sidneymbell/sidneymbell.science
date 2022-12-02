@@ -1,15 +1,15 @@
 import Button from "@mui/material/Button/Button";
-import { SoftwareProjectType } from "../../d";
+import { ProjectData } from "../d";
 
-type SoftwareProjectProps = {
+type ProjectProps = {
   contentWidth?: number;
   contentHeight?: number;
-  project: SoftwareProjectType;
+  project: ProjectData;
 };
 
-export const SoftwareProject = (props: SoftwareProjectProps) => {
+export const Project = (props: ProjectProps) => {
   let { contentWidth, contentHeight, project } = props;
-  const { title, imageSource, date, role, description, link } = project;
+  const { title, imageSource, subtitle, description, link, linkText } = project;
   contentWidth ??= 400;
   contentHeight ??= 400;
 
@@ -23,19 +23,16 @@ export const SoftwareProject = (props: SoftwareProjectProps) => {
         width: contentWidth,
         height: contentHeight,
         margin: "auto",
-        paddingTop: 100,
-        paddingBottom: 100,
+        paddingTop: 200,
+        paddingBottom: 200,
         paddingLeft: 50,
         paddingRight: 50,
         position: "relative",
-        // border: "1px solid red",
       }}
     >
-      <h4>{title}</h4>
-      <img className="imageMedium" src={imageSource} />
-      <h5>
-        {date} {role}
-      </h5>
+      <h4 style={{ display: "inline-block", verticalAlign: "top" }}>{title}</h4>
+      <img className="imageLargeRound" src={imageSource} />
+      <h5>{subtitle}</h5>
       <p className="projectDescription">{description}</p>
       <a
         href={link}
@@ -49,10 +46,10 @@ export const SoftwareProject = (props: SoftwareProjectProps) => {
           size="large"
           sx={{ marginTop: 2 }}
         >
-          Demo
+          {linkText}
         </Button>
       </a>
     </div>
   );
 };
-export default SoftwareProject;
+export default Project;

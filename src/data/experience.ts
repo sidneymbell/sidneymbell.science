@@ -5,7 +5,7 @@ export const experience: ProjectData[] = [
     description: "",
     title: "CZI Science",
     imageSource:
-      "https://raw.githubusercontent.com/sidneymbell/sidneymbell.science/main/src/images/czi.svg",
+      "https://raw.githubusercontent.com/sidneymbell/sidneymbell.science/main/src/images/czi.png",
     subtitle: "Staff Computational Biologist, 2019 - Present",
     link: "",
     linkText: "",

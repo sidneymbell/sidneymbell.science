@@ -21,6 +21,7 @@ export const Intro = (props: IntroProps) => {
         position: "relative",
         margin: "auto",
         marginTop: 50,
+        paddingBottom: 50,
       }}
     >
       <img

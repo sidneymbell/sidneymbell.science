@@ -6,6 +6,7 @@ import { Divider } from "@mui/material";
 import { softwareProjects } from "./data/softwareProjects";
 import { papers } from "./data/paperProjects";
 import Gallery from "./components/gallery";
+import { experience } from "./data/experience";
 
 export const App = () => {
   const [windowWidth, windowHeight] = useWindowSize();
@@ -32,6 +33,21 @@ export const App = () => {
           Selected publications
         </h2>
         <Gallery contentWidth={contentWidth} projects={papers} lg={4} />
+        <Divider variant="middle" />
+        <h2 style={{ position: "absolute", left: 50 }}>
+          Experience & Training
+        </h2>
+        <Gallery
+          contentWidth={contentWidth}
+          projects={experience}
+          imageClassName={"imageSmallRoundBorderless"}
+          columns={5}
+          xs={5}
+          sm={1}
+          md={1}
+          lg={1}
+          xl={1}
+        />
       </div>
     </div>
   );

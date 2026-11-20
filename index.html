@@ -1,13 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidney M. Bell, PhD</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sidney M. Bell, PhD</title>
+  <meta name="description" content="Scientific product lead and computational biologist. I build research software for the life sciences and public health.">
+  <meta property="og:title" content="Sidney M. Bell, PhD">
+  <meta property="og:description" content="I build research software for the life sciences and public health.">
+  <meta property="og:image" content="https://sidneymbell.science/images/sidney.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="#top">Sidney M. Bell</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#papers">Papers</a>
+      <a href="https://www.linkedin.com/in/sidneymbell/">LinkedIn</a>
+      <a class="js-email nav-email" href="#contact" data-u="sidneymbell+hello" data-d="gmail.com">Email me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <h1>I build research software for the life sciences and public health.</h1>
+        <p><strong>Scientific product lead and computational biologist</strong>, most recently at the Chan Zuckerberg Initiative. I partner with research and engineering teams to build tools that help scientists visualize, analyze, and interpret complex data and models. Committed to open science &amp; capacity building.</p>
+        <div class="cta">
+          <a class="js-email pill" href="#contact" data-u="sidneymbell+hello" data-d="gmail.com">Email me</a>
+          <span class="note">Open to new roles</span>
+        </div>
+      </div>
+      <img class="portrait" src="images/sidney.jpg" alt="Sidney Bell">
+    </div>
+  </div>
+
+  <!-- ===================== Projects ===================== -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><h2>Projects</h2></div>
+
+      <div class="projects">
+
+        <article class="project">
+          <img class="shot" src="images/cellxgene.jpg" alt="cellxgene embedding view">
+          <p class="meta">CZI · Scientific lead</p>
+          <h3>cellxgene: an interactive explorer for high-dimensional data</h3>
+          <p>cellxgene lets scientists explore single-cell data and other high-dimensional data interactively. As scientific lead, I designed its data-oriented features, built the data models behind them, and kept the product grounded in what researchers needed. It now serves thousands of scientists every week.</p>
+          <div class="links">
+            <a href="https://cellxgene.cziscience.com/e/ebc2e1ff-c8f9-466a-acf4-9d291afaf8b3.cxg/">Try the demo ↗</a>
+            <a href="https://www.biorxiv.org/content/10.1101/2021.04.05.438318">Read the paper ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img class="shot" src="images/czgenepi.jpg" alt="Screenshot of CZ GEN EPI's sample table">
+          <p class="meta">CZI · Founding product lead</p>
+          <h3>CZ GEN EPI: genomic epidemiology for public health</h3>
+          <p>Public health departments were sequencing pathogens but had few ways to analyze the data. I defined the product vision for CZ GEN EPI, a free, no-code genomic epidemiology platform, and led the team that shipped its first version. As it grew, we partnered with Theiagen, and as TheiaGenEpi it now serves 100+ public health departments around the world.</p>
+          <div class="links">
+            <a href="https://theiagenepi.org/">TheiaGenEpi ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img class="shot" src="images/nextstrain.jpg" alt="Nextstrain phylogeny and map">
+          <p class="meta">Fred Hutch &amp; CZI · Core contributor</p>
+          <h3>Nextstrain: real-time tracking of pathogen evolution</h3>
+          <p>Nextstrain turns public genomic data into a continually updated view of how pathogens evolve and spread. I was an early full-stack core contributor during my PhD. In 2020, I drafted its weekly COVID-19 situation reports, which flagged early local spread and averaged 500,000 readers a week. Nextstrain won the Open Science Prize and a Webby.</p>
+          <div class="links">
+            <a href="https://nextstrain.org/">Explore Nextstrain ↗</a>
+            <a href="https://academic.oup.com/bioinformatics/article/34/23/4121/5001388">Read the paper ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img class="shot" src="images/virtual-cells.svg" alt="">
+          <p class="meta">CZI · Scientific lead</p>
+          <h3>Virtual cells: putting single-cell foundation models to work</h3>
+          <p>I worked with researchers to scope early use cases for single-cell foundation models, then turned them into features and tools on CZI's Virtual Cells Platform that any researcher can reuse. For example, researchers can co-embed their own data directly with our reference data, which makes that reference data more valuable.</p>
+          <div class="links">
+            <a href="https://virtualcellmodels.cziscience.com/">Virtual Cells Platform ↗</a>
+          </div>
+        </article>
+
+        <article class="project wide">
+          <img class="shot" src="images/oss-community.svg" alt="">
+          <div>
+            <p class="meta">CZI · Founder &amp; lead</p>
+            <h3>Open Source Council: making open source intentional</h3>
+            <p>I founded CZI's Open Source Council and led its strategy and roadmap, which formalized open source standards for the software CZI builds. We adapted Mozilla's open source archetypes for scientific software; other institutions, including Carnegie Mellon University, have adopted the framework.</p>
+            <div class="links">
+              <a href="https://slides.com/sidneymbell/oss-archetypes">Archetypes talk ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Papers & talks ===================== -->
+  <section id="papers">
+    <div class="wrap split">
+
+      <div>
+        <div class="section-head">
+          <h2>Selected papers</h2>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=za4r4uQAAAAJ">All on Google Scholar ↗</a>
+        </div>
+        <ul class="list">
+          <li>
+            <a class="title" href="https://www.biorxiv.org/content/10.64898/2026.09.20.752947">baltic: the Backronymed Adaptable Lightweight Tree vIsualisation Code</a>
+            <p class="detail">Potter, Gangavarapu, <strong>Bell</strong>, Torres Jimenez, Dudas · <em>bioRxiv</em> 2026</p>
+          </li>
+          <li>
+            <a class="title" href="https://academic.oup.com/nar/article/53/D1/D886/7912032">CZ CELLxGENE Discover: a single-cell data platform for scalable exploration, analysis and modeling of aggregated data</a>
+            <p class="detail">CZI Cell Science Program, incl. <strong>Bell</strong> · <em>Nucleic Acids Research</em> 2025</p>
+          </li>
+          <li>
+            <a class="title" href="https://www.biorxiv.org/content/10.1101/2021.04.05.438318">Cellxgene: a performant, scalable exploration platform for high dimensional sparse matrices</a>
+            <p class="detail">Megill, Martin, Weaver, <strong>Bell</strong>, et al. · <em>bioRxiv</em> 2021</p>
+          </li>
+          <li>
+            <a class="title" href="https://elifesciences.org/articles/42496">Dengue genetic divergence generates within-serotype antigenic variation, but serotypes dominate evolutionary dynamics</a>
+            <p class="detail"><strong>Bell</strong>, Katzelnick, Bedford · <em>eLife</em> 2019</p>
+          </li>
+          <li>
+            <a class="title" href="https://academic.oup.com/bioinformatics/article/34/23/4121/5001388">Nextstrain: real-time tracking of pathogen evolution</a>
+            <p class="detail">Hadfield, Megill, <strong>Bell</strong>, et al. · <em>Bioinformatics</em> 2018</p>
+          </li>
+          <li>
+            <a class="title" href="https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1006466">Modern-day SIV viral diversity generated by extensive recombination and cross-species transmission</a>
+            <p class="detail"><strong>Bell</strong>, Bedford · <em>PLoS Pathogens</em> 2017</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="talks">
+        <div class="section-head">
+          <h2>Talks</h2>
+          <a href="https://slides.com/sidneymbell">All slides ↗</a>
+        </div>
+        <ul class="list">
+          <li><a class="title" href="https://slides.com/sidneymbell/oss-archetypes">Intentional OSS in science: because OSS ≠ "one size"</a></li>
+          <li><a class="title" href="https://slides.com/sidneymbell/biovis-2020">How do biologists find meaning in their (large, messy, nuanced) data?</a></li>
+          <li><a class="title" href="https://slides.com/sidneymbell/gen-epi-translational">Genomic epidemiology as translational research</a></li>
+          <li><a class="title" href="https://slides.com/sidneymbell/demystifying-wtf-is-a-model">Demystifying: wtf is a "model"?</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== Background ===================== -->
+  <section id="background">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Background</h2>
+        <a href="https://www.linkedin.com/in/sidneymbell/">LinkedIn ↗</a>
+      </div>
+      <ul class="list background">
+        <li>
+          <span class="title">Chan Zuckerberg Initiative, Science</span>
+          <p class="detail">2019 – 2026</p>
+        </li>
+        <li>
+          <span class="title">PhD, Molecular &amp; Cell Biology</span>
+          <p class="detail">University of Washington &amp; Fred Hutch · NSF Graduate Research Fellow</p>
+        </li>
+        <li>
+          <span class="title">Certificate in Interaction Design</span>
+          <p class="detail">Nielsen Norman Group</p>
+        </li>
+        <li>
+          <span class="title">MS, Epidemiology</span>
+          <p class="detail">University of Washington</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <span>Sidney M. Bell, PhD</span>
+    <nav aria-label="Elsewhere">
+      <a class="js-email" href="#contact" data-u="sidneymbell+hello" data-d="gmail.com">Email</a>
+      <a href="https://github.com/sidneymbell">GitHub</a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=za4r4uQAAAAJ">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/sidneymbell/">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Build mailto links at load time so the address isn't sitting in the HTML for scrapers.
+  document.querySelectorAll(".js-email").forEach(function (a) {
+    a.href = "mailto:" + a.dataset.u + "@" + a.dataset.d;
+  });
+</script>
+
+</body>
 </html>
